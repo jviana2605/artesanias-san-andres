@@ -39,9 +39,12 @@ La documentación técnica (casos de uso, clases, arquitectura, ERD, historias d
 ## 📂 Estructura del Repositorio
 
 ```text
-/docs        → Casos de uso, UML, arquitectura, backlog y requerimientos
-/mockups     → Interfaces creadas en Figma
-/prototype   → Prototipo TRL5 en Laravel (controladores, vistas, migraciones)
-/database    → Migraciones y diagrama ER
-/tests       → Plan de pruebas y casos
+/docs            → Casos de uso, UML, arquitectura, backlog y requerimientos
+/mockups         → Interfaces creadas en Figma
+/app             → Controladores, modelos y lógica del servidor (Laravel)
+/resources       → Vistas Blade (HTML del proyecto)
+/routes          → Definición de rutas web del sistema
+/database        → Migraciones y diagrama ER
+/tests           → Plan de pruebas y archivos de test
 README.md
+
