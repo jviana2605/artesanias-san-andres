@@ -47,3 +47,5 @@ Toda la documentación técnica (casos de uso, clases, arquitectura, ERD, histor
 /database        → Migraciones y diagrama ER
 /tests           → Plan de pruebas y archivos de test
 README.md
+
+
