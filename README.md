@@ -10,9 +10,9 @@ Autores: Jhonatan Jair Sibaja Pérez – Jesús Antonio Viana Marín
 
 Este repositorio contiene el prototipo funcional TRL5 de la plataforma digital desarrollada para mejorar la comercialización de productos artesanales en el municipio de San Andrés de Sotavento.
 
-El sistema se implementa utilizando el framework **Laravel**, lo que permite integrar:
+El sistema se implementa utilizando el framework **Laravel 12**, lo que permite integrar:
 
-- Backend en PHP  
+- Backend en PHP 8.2  
 - Modelo MVC  
 - Vistas con Blade  
 - Migraciones para MySQL  
@@ -25,14 +25,14 @@ Este prototipo cumple los lineamientos de la **Fase 4 – Desarrollo de la propu
 
 ## 🏗 Arquitectura del Sistema
 
-- **Framework:** Laravel 10  
-- **Backend:** PHP 8  
-- **Frontend:** Blade (HTML5, CSS3, Bootstrap)  
+- **Framework:** Laravel 12  
+- **Backend:** PHP 8.2  
+- **Frontend:** Blade + HTML5 + CSS3 + Bootstrap  
 - **Base de datos:** MySQL  
 - **Patrón arquitectónico:** MVC  
 - **Diseño UX/UI:** Figma  
 
-La documentación técnica (casos de uso, clases, arquitectura, ERD, historias de usuario) se encuentra en la carpeta `/docs`.
+Toda la documentación técnica (casos de uso, clases, arquitectura, ERD, historias de usuario) se encuentra en la carpeta `/docs`.
 
 ---
 
@@ -47,4 +47,3 @@ La documentación técnica (casos de uso, clases, arquitectura, ERD, historias d
 /database        → Migraciones y diagrama ER
 /tests           → Plan de pruebas y archivos de test
 README.md
-
