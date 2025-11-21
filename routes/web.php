@@ -20,24 +20,31 @@ Route::post('/login', [ArtesanoController::class, 'autenticar'])->name('autentic
 Route::get('/logout', [ArtesanoController::class, 'logout'])->name('logout');
 
 
-// ...
-
 Route::get('/dashboard', function () {
     $user = auth()->user();
 
-    $totalProductos   = $user->productos()->count();
-    $totalPedidos     = Pedido::count();
+    $totalProductos    = $user->productos()->count();
+    $totalPedidos      = Pedido::count();
     $pedidosPendientes = Pedido::where('estado', 'Pendiente')->count();
-    $ventasTotales    = Pedido::sum('total');
+    $ventasTotales     = Pedido::sum('total');
+
+    // Datos para la gráfica
+    $pedidosPorEstado = [
+        'Pendiente'   => Pedido::where('estado', 'Pendiente')->count(),
+        'En proceso'  => Pedido::where('estado', 'En proceso')->count(),
+        'Entregado'   => Pedido::where('estado', 'Entregado')->count(),
+    ];
 
     return view('dashboard', compact(
         'user',
         'totalProductos',
         'totalPedidos',
         'pedidosPendientes',
-        'ventasTotales'
+        'ventasTotales',
+        'pedidosPorEstado'
     ));
 })->name('dashboard')->middleware('auth');
+
 
 
 // CRUD de productos
