@@ -42,8 +42,7 @@ La documentación técnica (casos de uso, clases, arquitectura, ERD, historias d
 /docs        → Casos de uso, UML, arquitectura, backlog y requerimientos
 /mockups     → Interfaces creadas en Figma
 /prototype   → Prototipo TRL5 en Laravel (controladores, vistas, migraciones)
-/frontend    → Archivos adicionales del cliente (si aplica)
-/backend     → Controladores y lógica del servidor Laravel
+/frontend & backend     → Controladores y lógica del servidor Laravel
 /database    → Migraciones y diagrama ER
 /tests       → Plan de pruebas y casos
 README.md
