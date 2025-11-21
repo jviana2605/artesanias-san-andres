@@ -8,30 +8,42 @@ Autores: Jhonatan Jair Sibaja Pérez – Jesús Antonio Viana Marín
 
 ## 📘 Descripción del proyecto
 
-Este repositorio contiene el prototipo funcional TRL5 de la plataforma digital desarrollada para mejorar la comercialización de productos artesanales en el municipio de San Andrés de Sotavento.  
-El proyecto se desarrolla bajo la metodología CDIO y metodologías ágiles (Scrum), siguiendo los lineamientos de la Fase 4 del Proyecto de Grado.
+Este repositorio contiene el prototipo funcional TRL5 de la plataforma digital desarrollada para mejorar la comercialización de productos artesanales en el municipio de San Andrés de Sotavento.
+
+El sistema se implementa utilizando el framework **Laravel**, lo que permite integrar:
+
+- Backend en PHP  
+- Modelo MVC  
+- Vistas con Blade  
+- Migraciones para MySQL  
+- Rutas organizadas  
+- Controladores estructurados  
+
+Este prototipo cumple los lineamientos de la **Fase 4 – Desarrollo de la propuesta ingenieril**, aplicando la metodología **CDIO** y metodologías ágiles **Scrum**.
 
 ---
 
 ## 🏗 Arquitectura del Sistema
 
-- HTML5, CSS3, JavaScript  
-- PHP 8 – Backend  
-- MySQL – Base de datos  
-- Patrón MVC  
-- Diseño UX/UI en Figma  
+- **Framework:** Laravel 10  
+- **Backend:** PHP 8  
+- **Frontend:** Blade (HTML5, CSS3, Bootstrap)  
+- **Base de datos:** MySQL  
+- **Patrón arquitectónico:** MVC  
+- **Diseño UX/UI:** Figma  
 
-La arquitectura y modelos se encuentran en la carpeta `/docs`.
+La documentación técnica (casos de uso, clases, arquitectura, ERD, historias de usuario) se encuentra en la carpeta `/docs`.
 
 ---
 
-## 📂 Estructura del repositorio
+## 📂 Estructura del Repositorio
 
 ```text
-/docs      → Casos de uso, UML, arquitectura, backlog y requerimientos
-/mockups   → Interfaces creadas en Figma
-/prototype → Prototipo funcional inicial (HTML, CSS, JS)
-/frontend  → Archivos del cliente
-/backend   → Estructura inicial del servidor (PHP)
-/database  → Diagrama ER y modelo SQL
-/tests     → Plan de pruebas
+/docs        → Casos de uso, UML, arquitectura, backlog y requerimientos
+/mockups     → Interfaces creadas en Figma
+/prototype   → Prototipo TRL5 en Laravel (controladores, vistas, migraciones)
+/frontend    → Archivos adicionales del cliente (si aplica)
+/backend     → Controladores y lógica del servidor Laravel
+/database    → Migraciones y diagrama ER
+/tests       → Plan de pruebas y casos
+README.md
